@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>||Registration Website||</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0.822);
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .nav > li {
+        margin-left: 5%;
+      }
+      ul > li > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      ul > li > a:hover {
+        color: tomato;
+      }
+      li {
+        list-style-type: none;
+        text-decoration: none;
+      }
+      .box > input {
+        display: flex;
+        width: 50%;
+      }
+      label {
+        margin-top: 20px;
+      }
+      input {
+        padding: 5px;
+      }
+      body {
+        background-color: rgb(216, 213, 208);
+      }
+
+      .box {
+        margin-top: 30px;
+        width: 70%;
+        margin-left: auto;
+      }
+
+      .cmnt {
+        padding-top: 10px;
+      }
+      .btns {
+        margin-top: 20px;
+        margin-left: auto;
+        width: 70%;
+        /* display: inline; */
+      }
+      h2 {
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .btn:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.822);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar starts from here  -->
+    <div class="navbar">
+      <ul class="nav">
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="#">About US</a></li>
+        <li class="items"><a href="#">Contact US</a></li>
+        <li class="items"><a href="#">Services</a></li>
+      </ul>
+    </div>
+    <!-- navbar ends here  -->
+    <div class="container">
+      <form action="xyz.php">
+        <h2>Registration Form</h2>
+        <div class="box">
+          <label for="#">First Name:</label>
+          <input
+            type="text"
+            placeholder="Enter Your First Name"
+            required
+          /><br />
+          <label for="#">Last Name:</label>
+          <input type="text" placeholder="Enter Your Last Name" /><br />
+          <label for="#">Email Id.:</label>
+          <input type="email" placeholder="Enter Your Email" required /><br />
+          <label for="#">Password:</label>
+          <input
+            type="password"
+            placeholder="Enter Your Password"
+            required
+          /><br />
+          <label for="#">Mobile Number:</label>
+          <input type="number" placeholder="Enter Your Mobile Number" /><br />
+          <label for="#" class="cmnt">Write Your Comments Here:</label><br />
+          <textarea
+            style="padding: 1%"
+            name="comment"
+            id=""
+            cols="60"
+            rows="9"
+            placeholder="Write your thougts here...."
+          ></textarea>
+        </div>
+        <div class="btns">
+          <label for="#">Select Your Gender:</label>&nbsp;
+          <input type="radio" name="gender" value="Male" />Male &nbsp;
+          <input type="radio" name="gender" value="Female" />Female &nbsp;
+          <input type="radio" name="gender" value="other" />Other<br />
+          <input
+            class="btn"
+            style="
+              margin-left: 150px;
+              margin-top: 10px;
+              width: 80px;
+              font-weight: bold;
+            "
+            type="Submit"
+          />
+          &nbsp;&nbsp;<input
+            class="btn"
+            style="font-weight: bold; width: 80px"
+            type="Reset"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
